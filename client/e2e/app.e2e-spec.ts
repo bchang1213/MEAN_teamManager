@@ -1,10 +1,10 @@
-import { AppPage } from './app.po';
+import { TeamManagerPage } from './app.po';
 
-describe('public App', () => {
-  let page: AppPage;
+describe('team-manager App', () => {
+  let page: TeamManagerPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new TeamManagerPage();
   });
 
   it('should display welcome message', () => {

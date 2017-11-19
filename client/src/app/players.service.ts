@@ -12,6 +12,9 @@ export class PlayersService {
 	saveToDB(playerObject){
 		var playerSave = this._http.post("/create", playerObject);
 		console.log("ran the service method for saving.");
-		return playerSave.map(Response=>Response.json()).toPromise();
+		console.log(playerObject);
+		var promiseObject = playerSave.map(Response=>Response.json()).toPromise();
+		console.log(promiseObject);
+		return promiseObject;
 	}
 }

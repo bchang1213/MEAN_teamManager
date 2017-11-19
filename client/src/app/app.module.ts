@@ -10,6 +10,7 @@ import { PlayersComponent } from './players/players.component';
 import { ListComponent } from './players/list/list.component';
 import { NewComponent } from './players/new/new.component';
 import { StatusComponent } from './players/status/status.component';
+import { GameStatusComponent } from './players/game-status/game-status.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { StatusComponent } from './players/status/status.component';
     PlayersComponent,
     ListComponent,
     NewComponent,
-    StatusComponent
+    StatusComponent,
+    GameStatusComponent
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,7 @@ module.exports = function(app) {
 		controller.show(request, response);
 	})
 
-	app.post('/notes/new', function(request, response){
+	app.post('/create', function(request, response){
 		controller.create(request, response);
 	})
 

@@ -10,7 +10,6 @@ import { GameStatusComponent } from './players/game-status/game-status.component
 const routes: Routes = [
 	{
 		path: 'players',
-		pathMatch: 'full',
 		component: PlayersComponent,
 		children: [
 			{path: 'list', component: ListComponent},

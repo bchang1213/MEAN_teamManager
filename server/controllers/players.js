@@ -17,9 +17,10 @@ module.exports = {
 
 	create: function(request, response) {
 		var player = new Player(request.body);
-		quote.save(function(error) {
+		player.save(function(error) {
 			if(error){
 				console.log("Error saving player into DB: ", error);
+				response.json(error);
 			}
 			else {
 				console.log("new player saved into db.");

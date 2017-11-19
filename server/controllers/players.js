@@ -19,14 +19,14 @@ module.exports = {
 		var player = new Player(request.body);
 		console.log("made it to the create route: ",request.body);
 		console.log(player.name, player.position);
-		player.save(function(error) {
+		player.save(function(error, savedPlayer) {
 			if(error){
 				console.log("Error saving player into DB: ", error);
 				response.json(error);
 			}
 			else {
 				console.log("new player saved into db.");
-				response.json(player);
+				response.json(savedPlayer);
 			}
 		})
 	}
